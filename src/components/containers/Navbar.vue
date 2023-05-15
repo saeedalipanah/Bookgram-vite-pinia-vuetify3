@@ -15,7 +15,7 @@
       </v-app-bar-title>
 
       <v-spacer></v-spacer>
-      <v-btn icon v-for="(icon, i) in icons" :key="i">
+      <v-btn icon v-for="(icon, i) in icons" :key="i" class="d-none d-sm-block">
         <v-icon>{{ icon }}</v-icon>
       </v-btn>
     </v-app-bar>

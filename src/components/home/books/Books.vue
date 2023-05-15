@@ -4,11 +4,11 @@
       <template v-slot:top>
         <header class="v-table__header"><h1>Books list</h1></header>
         <v-row class="mb-2 px-3">
-          <v-col cols="2" class="d-flex justify-center align-center"
+          <v-col cols="4" md="2" class="d-flex justify-center align-center"
             ><v-icon>mdi-filter</v-icon>
             <h3>Filter by</h3></v-col
           >
-          <v-col cols="4">
+          <v-col cols="8" md="4">
             <v-text-field
               density="compact"
               variant="solo"
@@ -19,7 +19,7 @@
               v-model.trim="enteredBook"
             ></v-text-field>
           </v-col>
-          <v-col cols="3">
+          <v-col cols="6" md="3">
             <v-text-field
               density="compact"
               variant="solo"
@@ -30,7 +30,7 @@
               v-model.trim="enteredAuthor"
             ></v-text-field>
           </v-col>
-          <v-col cols="3">
+          <v-col cols="6" md="3">
             <v-text-field
               density="compact"
               variant="solo"
